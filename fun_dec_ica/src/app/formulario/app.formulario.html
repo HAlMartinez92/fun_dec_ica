@@ -1,0 +1,275 @@
+<form>
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+          SECCIÓN - OPCIONES DE USO
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <div class="row">
+
+            <div class="col">
+              <div class="form-group mb-3 form-floating">
+
+                <select id="declaracion" name="declaracion" class="form-select" aria-label="Default select example">
+                  <option selected>¿Qué tipo de declaración va a presentar?</option>
+                  <option value="dec_inicial">Declaración Inicial</option>
+                  <option value="dec_correccion">Declaración de Corrección</option>
+                  <option value="solo_pago">Solo para Pago</option>
+                </select>
+
+                <label for="declaracion" class="form-label">Tipo de Declaración:</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-group mb-3">
+                <label for="fechaPresentacion" class="form-label">Fecha Máxima de Presentación y/o Pago:</label>
+                <input type="date" id="fechaPresentacion" name="fechaPresentacion" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="declaracion_correccion"
+                       placeholder="Número de la Declaración anteriormente presentada">
+                <label for="declaracion_correccion">Número de la Declaración Anteriormente Presentada</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+          SECCIÓN A - INFORMACIÓN DEL CONTRIBUYENTE
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nombre_razon_social"
+                         placeholder="1. NOMBRES Y APELLIDOS Ó RAZÓN SOCIAL">
+                  <label for="nombre_razon_social">1. NOMBRES Y APELLIDOS Ó RAZÓN SOCIAL</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="tipo_identificacion"
+                         placeholder="2. TIPO DE IDENTIFICACIÓN">
+                  <label for="tipo_identificacion">2. TIPO DE IDENTIFICACIÓN</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="numero_de_identificacion"
+                         placeholder="NÚMERO DE IDENTIFICACIÓN">
+                  <label for="numero_de_identificacion">NÚMERO DE IDENTIFICACIÓN</label>
+                </div>
+              </div>
+            </div><!-- Fin de Fila -->
+
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="direccion_notificacion"
+                         placeholder="3. DIRECCIÓN DE NOTIFICACIÓN">
+                  <label for="direccion_notificacion">3. DIRECCIÓN DE NOTIFICACIÓN</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="departamento_notificacion"
+                         placeholder="2. TIPO DE IDENTIFICACIÓN">
+                  <label for="departamento_notificacion">DEPARTAMENTO</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="municipio_notificacion"
+                         placeholder="MUNICIPIO">
+                  <label for="municipio_notificacion">MUNICIPIO</label>
+                </div>
+              </div>
+            </div> <!-- Fin de Fila -->
+
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="telefono"
+                         placeholder="4. TELÉFONO">
+                  <label for="telefono">4. TELÉFONO</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email"
+                         placeholder="5. CORREO ELECTRÓNICO">
+                  <label for="email">5. CORREO ELECTRÓNICO</label>
+                </div>
+              </div>
+
+            </div> <!-- Fin de Fila -->
+
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="num_establecimientos"
+                         placeholder="6. NÚMERO DE ESTABLECIMIENTOS">
+                  <label for="num_establecimientos">6. NÚMERO DE ESTABLECIMIENTOS</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-group mb-3 form-floating">
+
+                  <select id="tipo_de_regimen" name="regimen" class="form-select" aria-label="Default select example">
+                    <option selected>¿A que tipo de régimen pertenece?</option>
+                    <option value="ag_retenedor">AGENTE RETENEDOR</option>
+                    <option value="re_comun">RÉGIMEN COMÚN</option>
+                    <option value="gran_contribuyente">GRAN CONTRIBUYENTE</option>
+                  </select>
+
+                  <label for="tipo_de_regimen">7. CLASIFICACIÓN</label>
+                </div>
+              </div>
+
+            </div> <!-- Fin de Fila -->
+
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="avisos_y_tableros" checked>
+                  <label class="form-check-label" for="avisos_y_tableros">
+                    ¿Tiene Avisos y Tableros?
+                  </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="consorcio_union_temporal">
+                  <label class="form-check-label" for="consorcio_union_temporal">
+                    ¿Es un Consorcio o Unión Temporal?
+                  </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="patrimonio_autonomo">
+                  <label class="form-check-label" for="patrimonio_autonomo">
+                    ¿Realiza Actividades a través de Patrimonio Autónomo?
+                  </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="cancelacion_establecimiento">
+                  <label class="form-check-label" for="cancelacion_establecimiento">
+                    ¿Esta Declaración es por Motivo de Cancelación del Establecimiento?
+                  </label>
+                </div>
+              </div>
+
+            </div> <!-- Fin de Fila -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+          SECCIÓN B - BASE GRAVABLE
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">8. TOTAL INGRESOS ORDINARIOS Y EXTRAORDINARIOS DEL PERIODO EN TODO EL PAÍS</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">9. MENOS INGRESOS FUERA DE ESTE MUNICIPIO O DISTRITO</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">10. TOTAL INGRESOS ORDINARIOS Y EXTRAORDINARIOS EN ESTE MUNICIPIO (Renglón 8 menos 9)</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">11. MENOS INGRESOS POR DEVOLUCIONES, REBAJAS, DESCUENTOS</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">12. MENOS INGRESOS POR EXPORTACIONES</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">13. MENOS INGRESOS POR VENTA DE ACTIVOS FIJOS</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">14. MENOS INGRESOS POR ACTIVIDADES EXCLUIDAS O NO SUJETAS Y OTROS INGRESOS NO GRAVADOS</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">15. MENOS INGRESOS POR OTRAS ACTIVIDADES EXENTAS EN ESTE MUNICIPIO O DISTRITO (POR ACUERDO)</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">16. TOTAL INGRESOS GRAVABLES (renglón 10 menos 11, 12, 13, 14, 15)</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="submit" value="Registrar la Declaración">
+
+</form>
